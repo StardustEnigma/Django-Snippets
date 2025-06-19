@@ -23,3 +23,8 @@ def login_and_role_required(required_role):
         return _wrapped_view
     return decorator
 # in the app named core
+
+@login_and_role_required("recruiter")
+def recruiter_dashboard(request):
+    # ... will be use
+    ...
